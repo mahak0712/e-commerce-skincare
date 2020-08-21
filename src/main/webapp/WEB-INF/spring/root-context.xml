@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="userDao" class="com.neu.edu.dao.UserDAO"></bean>
+	<bean id="cartDao" class="com.neu.edu.dao.CartDAO"></bean>
+	<bean id="proDao" class="com.neu.edu.dao.ProductDAO"></bean>
+	<bean id="payDao" class="com.neu.edu.dao.PaymentDAO"></bean>
+	<bean id="orderDao" class="com.neu.edu.dao.OrderDAO"></bean>
+	<bean id="shipDao" class="com.neu.edu.dao.ShipDAO"></bean>
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="2000000" />
+	</bean>
+</beans>

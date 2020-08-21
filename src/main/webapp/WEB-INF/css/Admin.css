@@ -1,0 +1,23 @@
+
+ 
+  div.adminside
+ {
+ height:100%;
+ width:30%;
+ box-shadow: 2px 2px 2px black;
+ 
+ }
+ ul
+ {
+ list-style:none;
+ }
+ 
+ div
+ {
+ display:inline;
+ 
+
+ margin-top:-30%;
+ 
+ 
+ }
